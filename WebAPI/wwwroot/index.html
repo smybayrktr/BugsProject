@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/index.js"></script>
+    <title>Ana Sayfa</title>
+</head>
+
+<body>
+    <div id="loading" class="loading">
+        <img src="./img/loading.svg" alt="">
+    </div>
+    <div class="container noselect">
+        <div class="left">
+            <div class="search">
+                <input id="query" type="text" placeholder="Ara...">
+                <a href="#" id="search"></a>
+            </div>
+            <div id="results" class="result">
+
+            </div>
+        </div>
+        <div id="posts" class="right">
+            <div class="topmenu">
+
+                <input onchange="submitForm();" type="file" id="upload" accept="image/*">
+
+                <a onclick="add();" id="add" class="add"></a>
+                <a onclick="logout();" id="logout" class="logout"></a>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

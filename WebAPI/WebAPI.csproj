@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\img\plus.svg" />
+    <Content Remove="wwwroot\img\power.svg" />
+    <Content Remove="wwwroot\img\profilem.svg" />
+    <Content Remove="wwwroot\img\profilew.svg" />
+    <Content Remove="wwwroot\img\search.svg" />
+    <Content Remove="wwwroot\img\test1.jpg" />
+    <Content Remove="wwwroot\img\test2.jpg" />
+    <Content Remove="wwwroot\style\reset.css" />
+    <Content Remove="wwwroot\style\style.css" />
+    <Content Remove="wwwroot\style\style.css.map" />
+    <Content Remove="wwwroot\style\style.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\plus.svg" />
+    <None Include="wwwroot\img\power.svg" />
+    <None Include="wwwroot\img\profilem.svg" />
+    <None Include="wwwroot\img\profilew.svg" />
+    <None Include="wwwroot\img\search.svg" />
+    <None Include="wwwroot\img\test1.jpg" />
+    <None Include="wwwroot\img\test2.jpg" />
+    <None Include="wwwroot\style\reset.css" />
+    <None Include="wwwroot\style\style.css" />
+    <None Include="wwwroot\style\style.css.map" />
+    <None Include="wwwroot\style\style.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj" />
+    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Image\" />
+  </ItemGroup>
+
+
+</Project>
